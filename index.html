@@ -1,0 +1,16 @@
+<div id="demo"></div>
+
+<script>
+let fullDate = new Date();
+let getDates = fullDate.getDate();
+let getMonth = fullDate.getMonth();
+let getYear = fullDate.getFullYear();
+let dateFormate = (getMonth < 10 ) ?  '0' + getMonth : getMonth;
+
+let formate1 = dateFormate + '-' + getDates + '-' + getYear;
+let formate2 = dateFormate + '/' + getDates + '/' + getYear;
+
+document.getElementById('demo').innerHTML = formate1 + '<br />' + formate2;
+// 05-17-2020
+// 05/17/2020
+</script>
